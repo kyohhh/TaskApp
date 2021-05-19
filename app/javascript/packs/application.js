@@ -9,6 +9,7 @@ ActiveStorage.start()
 
 // 作成したファイルをwebpackerに読み込み
 import "../stylesheets/application"
+import "@fortawesome/fontawesome-free/js/all"
 import "../js/hoge.js"
 
 // - 検証用 -
