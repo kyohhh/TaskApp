@@ -1,6 +1,6 @@
 <div class="sinupPage">
   <div class="titleArea">
-    <h1>新規アカウント作成</h1>
+    <h1>TaskApp</h1>
     <div class="m-3">or</div>
     <%= render "devise/shared/links" %>
   </div>
@@ -27,7 +27,7 @@
         <%= f.password_field :password_confirmation, class:"form-control", placeholder: "パスワードを再度入力してください", autocomplete: "off" %>
       </div>
       <div class="text-center">
-        <%= f.submit "アカウント作成", class: "btn submitBtn" %>
+        <%= f.submit "新規アカウント作成", class: "btn submitBtn" %>
       </div>
     <% end %>
   </div>
