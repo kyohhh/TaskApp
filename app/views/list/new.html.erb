@@ -4,8 +4,8 @@
       <% if @list.errors.any? %>
         <p class="text-danger">タイトルは1～255文字以内で入力してください</p>
       <% end %>
-      <%= f.label :title %>
-      <%= f.text_field :title, autofocus: true, class: "form-control listName", placeholder: "リスト名" %>
+      <%= f.label :list_title %>
+      <%= f.text_field :list_title, autofocus: true, class: "form-control listName", placeholder: "リスト名" %>
       <div class="text-center"><%= f.submit "作成", class: "submitBtn" %></div>
     <% end %>
   </div>
