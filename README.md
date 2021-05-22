@@ -17,7 +17,7 @@
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
 | list_title | string     | null: false                    |
-| user       | references | null: false, foreign_key: true |
+| user_id    | references | null: false, foreign_key: true |
 
 ### Association
 
@@ -30,7 +30,7 @@
 | ---------- | ---------- | ------------------------------ |
 | card_title | string     | null: false                    |
 | memo       | text       | null: false                    |
-| list       | references | null: false, foreign_key: true |
+| list_id    | references | null: false, foreign_key: true |
 
 ### Association
 
