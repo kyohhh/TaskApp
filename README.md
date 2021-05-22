@@ -30,7 +30,7 @@
 | ---------- | ---------- | ------------------------------ |
 | card_title | string     | null: false                    |
 | memo       | text       | null: false                    |
-| prototype  | references | null: false, foreign_key: true |
+| list       | references | null: false, foreign_key: true |
 
 ### Association
 
