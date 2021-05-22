@@ -20,10 +20,11 @@ class CardController < ApplicationController
   end
 
   def edit
+    @lists = List.where(user: current_user)
   end
 
   def update
-    if @card.update_attributes(card_params)
+    if @card.update(card_params)
       redirect_to :root
     else
       render action: :edit
