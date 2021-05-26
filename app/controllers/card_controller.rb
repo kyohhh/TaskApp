@@ -8,6 +8,7 @@ class CardController < ApplicationController
   end
 
   def create
+    byebug
     @card = Card.new(card_params)
     if @card.save
       redirect_to :root
@@ -38,7 +39,7 @@ class CardController < ApplicationController
 
   private
     def card_params
-      params.require(:card).permit(:card_title, :memo, :list_id).merge(list_id: params[:list_id])
+      params.require(:card).permit(:card_title, :memo).merge(list_id: params[:list_id])
     end
 
     def set_card
