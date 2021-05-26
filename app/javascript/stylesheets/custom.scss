@@ -7,6 +7,26 @@ body {
   display: none;
 }
 
+// error
+.error-alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .error-message {
+    list-style: none;
+    color: #d33722;
+  }
+}
+
+// login-flash-message
+.login-flash-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d33722;
+  margin-bottom: 20px;
+}
+
 // header
 .header {
   background: #858484;

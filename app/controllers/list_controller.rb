@@ -11,7 +11,7 @@ class ListController < ApplicationController
     if @list.save
       redirect_to :root
     else
-      render action :new
+      render action: :new
     end
   end
 
