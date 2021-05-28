@@ -21,7 +21,7 @@ class CardController < ApplicationController
   end
 
   def edit
-    @lists = List.where(user: current_user)
+    # lists = List.where(user: current_user) #list_titleを空で更新した時のエラー対応のため
   end
 
   def update
@@ -39,7 +39,7 @@ class CardController < ApplicationController
 
   private
     def card_params
-      params.require(:card).permit(:card_title, :memo).merge(list_id: params[:list_id])
+      params.require(:card).permit(:card_title, :memo, :list_id).merge(list_id: params[:list_id])
     end
 
     def set_card
