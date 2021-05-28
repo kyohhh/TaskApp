@@ -8,6 +8,7 @@ class CardController < ApplicationController
   end
 
   def create
+    byebug
     @card = Card.new(card_params)
     if @card.save
       redirect_to :root
