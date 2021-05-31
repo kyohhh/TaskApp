@@ -10,7 +10,7 @@ RSpec.describe Card, type: :model do
       @card = Card.new(card_title: '', memo: 'メモ', list_id: 1)
       @card.card_title = '' 
       @card.valid?
-      expect(@card.errors.full_messages).to include "Card titleは1文字以上で入力してください"
+      expect(@card.errors.full_messages).to include "カードタイトルは1文字以上で入力してください"
     end
     it 'list_idが空では登録できない' do
       @card = Card.new(card_title: 'タイトル', memo: 'メモ', list_id: '')

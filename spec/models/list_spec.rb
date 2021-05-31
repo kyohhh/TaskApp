@@ -9,7 +9,7 @@ RSpec.describe List, type: :model do
     it 'list_titleが空では登録できない' do
       @list.list_title = '' 
       @list.valid?
-      expect(@list.errors.full_messages).to include "List titleは1文字以上で入力してください"
+      expect(@list.errors.full_messages).to include "リストタイトルは1文字以上で入力してください"
     end
     it 'user_idが空では登録できない' do
       @list.user_id = '' 
