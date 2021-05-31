@@ -158,3 +158,55 @@ body {
     }
   }
 }
+
+// account_update
+.updatePage {
+  margin-top: 10vh;
+  .titleArea {
+    text-align: center;
+    h2 {font-size: 2rem;}
+  }
+  .edit_user {
+    .form-group {
+      max-width: 500px;
+      margin: 0 auto 1.5rem auto;
+      .form-control {
+        background: #f6f8fa;
+      }
+    }
+  }
+  .actions {
+    text-align: center;
+    .submitBtn {
+      background: #29b744;
+      color: #fff;
+      width: 200px;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 90px;
+      transition: opacity .5s;
+      &:hover {
+        opacity: .6;
+      }
+    }
+  }
+}
+
+// account_destroy
+.destroyPage {
+  margin-top: 3vh;
+  .titleArea {
+    text-align: center;
+  }
+  .container {
+    text-align: center;
+    .actions {
+      margin-top: 1vh;
+      .submitBtn {
+        background: #6e6e6e;
+      }
+    }
+  }
+}
+
+
