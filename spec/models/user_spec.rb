@@ -21,5 +21,10 @@ RSpec.describe User, type: :model do
       @user.valid?
       expect(@user.errors.full_messages).to include 'パスワードを入力してください'
     end
+    it 'nameが11文字以上では登録できない' do
+      @user.name = 'あいうえおあいうえおあ' 
+      @user.valid?
+      expect(@user.errors.full_messages).to include "ニックネームは10文字以内で入力してください"
+    end
   end
 end
