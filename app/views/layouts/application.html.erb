@@ -13,19 +13,8 @@
 
   <body>
 
-    <%= render 'partial/header' if current_user %>
-
-    <% if flash[:notice] %>
-      <div class="alert alert-info">
-        <%= flash[:notice] %>
-      </div>
-    <% end %>
-    <% if flash[:alert] %>
-      <div class="alert alert-danger">
-        <%= flash[:alert] %>
-      </div>
-    <% end %>
-
+    <%= render 'layouts/header' if current_user %>
+    
     <%= yield %>
   </body>
 </html>
