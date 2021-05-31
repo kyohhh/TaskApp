@@ -13,7 +13,7 @@
       </div>
       <div class="cardeditForm_memo">
         <label>リスト名</label>
-        <%= select :card, :list_id, List.all.map{ |l| [l.list_title, l.id] }, {}, { class: 'form-control' } %> 
+        <%= select :card, :list_id, List.where(user: current_user).map{ |l| [l.list_title, l.id] }, {}, { class: 'form-control' } %> 
       </div>
       <div class="text-center"><%= f.submit "更新する", class: "submitBtn" %></div>
     <% end %>
