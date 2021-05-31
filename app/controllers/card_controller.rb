@@ -8,8 +8,7 @@ class CardController < ApplicationController
   end
 
   def create
-    byebug
-    @card = Card.new(card_params)
+    @card = Card.new(new_card_params)
     if @card.save
       redirect_to :root
     else
@@ -21,11 +20,12 @@ class CardController < ApplicationController
   end
 
   def edit
-    @lists = List.where(user: current_user)
+    # @lists = List.where(user: current_user) #card_titleを空で更新した時のundefined method `map' for nil:NilClass対策のためインスタンス変数は使用しない
+    List.where(user: current_user)
   end
 
   def update
-    if @card.update(card_params)
+    if @card.update(edit_card_params)
       redirect_to :root
     else
       render action: :edit
@@ -38,8 +38,12 @@ class CardController < ApplicationController
   end
 
   private
-    def card_params
+    def new_card_params
       params.require(:card).permit(:card_title, :memo).merge(list_id: params[:list_id])
+    end
+
+    def edit_card_params
+      params.require(:card).permit(:card_title, :memo, :list_id)
     end
 
     def set_card
