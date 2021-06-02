@@ -32,6 +32,12 @@ body {
   background: #858484;
   padding: 10px;
   .nav {
+    p {
+      padding: 5px 5px;
+      color: #fff;
+      background-color: #ff1e007a;
+
+    }
     .header_menu {
       display: flex;
       width: 100%;

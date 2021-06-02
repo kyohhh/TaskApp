@@ -1,5 +1,8 @@
 <header class="header">
   <nav class="nav">
+    <% if flash[:alert] %>
+      <p><%= flash[:alert] %></p>
+    <% end %>
     <ul class="header_menu">
       <li class="nav-link">
         <%# ゲストユーザーの場合リンクをなくす編集削除できないようにする %>

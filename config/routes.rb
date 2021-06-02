@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   # deviseのユーザー機能
-  devise_for :users
+  # devise_for :users
+  
+  # ゲストユーザーは削除できない
+  devise_for :users, controllers: {
+    registrations: 'users/registrations'
+  }
 
   # ゲストユーザー機能
   devise_scope :user do
