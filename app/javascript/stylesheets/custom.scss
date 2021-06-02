@@ -152,8 +152,8 @@ body {
 .signinPage {
   margin-top: 10vh;
   .title {
-    margin: 0;
     text-align: center;
+    h2 {font-size: 2rem;}
   }
   .new_user {
     .form-group {
