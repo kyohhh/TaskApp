@@ -124,6 +124,23 @@ body {
   }
 }
 
+// guest_sign_up
+.guestPage {
+  margin-top: 10vh;
+  .submitBtn {
+    background: #2876cf;
+    color: #fff;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 90px;
+    transition: opacity .5s;
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
+
 // devise_shared_links
 .acountPage_link {
   & > a {

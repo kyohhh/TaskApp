@@ -7,7 +7,7 @@
       <li class="nav-link">
         <%# ゲストユーザーの場合リンクをなくす編集削除できないようにする %>
         <% if current_user.name == "ゲスト" %>
-          <%= current_user.name %>さん</li>
+          <%= current_user.name %>さま</li>
         <% else %>
           <%= link_to current_user.name, edit_user_registration_path %>さん</li>
         <% end %>
