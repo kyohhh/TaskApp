@@ -32,6 +32,12 @@ body {
   background: #858484;
   padding: 10px;
   .nav {
+    p {
+      padding: 5px 5px;
+      color: #fff;
+      background-color: #ff1e007a;
+
+    }
     .header_menu {
       display: flex;
       width: 100%;
@@ -106,6 +112,23 @@ body {
   }
   .submitBtn {
     background: #d33722;
+    color: #fff;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 90px;
+    transition: opacity .5s;
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
+
+// guest_sign_up
+.guestPage {
+  margin-top: 5vh;
+  .submitBtn {
+    background: #2876cf;
     color: #fff;
     width: 200px;
     margin-top: 20px;
