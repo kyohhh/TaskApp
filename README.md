@@ -27,9 +27,9 @@ https://taskapp20210519.herokuapp.com/
 
 
 
-# テーブル設計
+## テーブル設計
 
-## usersテーブル
+### usersテーブル
 
 | Column             | Type   | Options     |
 | ------------------ | ------ | ----------- |
@@ -41,7 +41,7 @@ https://taskapp20210519.herokuapp.com/
 
 - has_many :lists
 
-## listsテーブル
+### listsテーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
@@ -53,7 +53,7 @@ https://taskapp20210519.herokuapp.com/
 - has_many :cards
 - belongs_to :user
 
-## cardsテーブル
+### cardsテーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
@@ -67,7 +67,7 @@ https://taskapp20210519.herokuapp.com/
 
 ## ER図
 
-![ER](https://user-images.githubusercontent.com/74011232/120958022-c2f5b500-c791-11eb-9f83-a9713ada1dde.png)
+![ER](https://user-images.githubusercontent.com/74011232/120958234-37305880-c792-11eb-83b5-bdb4bd261c98.png)
 
 
 
