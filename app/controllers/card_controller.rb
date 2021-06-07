@@ -20,7 +20,8 @@ class CardController < ApplicationController
   end
 
   def edit
-    # @lists = List.where(user: current_user) #card_titleを空で更新した時のundefined method `map' for nil:NilClass対策のためインスタンス変数は使用しない
+    # @lists = List.where(user: current_user) 
+    #card_titleを空で更新した時のundefined method `map' for nil:NilClass対策のためインスタンス変数は使用しない
     List.where(user: current_user)
   end
 
