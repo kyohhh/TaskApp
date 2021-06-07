@@ -67,7 +67,7 @@ https://taskapp20210519.herokuapp.com/
 
 ## ER図
 
-![ER](https://user-images.githubusercontent.com/74011232/120957521-c8063480-c790-11eb-9ec5-27f917510883.png)
+![ER](https://user-images.githubusercontent.com/74011232/120958022-c2f5b500-c791-11eb-9f83-a9713ada1dde.png)
 
 
 
