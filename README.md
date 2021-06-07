@@ -1,17 +1,14 @@
 # アプリ名
-===
 TaskApp
 
 ## 概要
-===
 タスク管理ができるアプリケーションです。
 タスクをリスト化し管理、リストの中にはそのタスクを細分化できるカード機能、カード機能には詳細をメモすることができます。
 
 
-![Alt text](/TaskApp/to/TaskAppREADME用.png)
+<img width="1624" alt="TaskAppREADME用" src="https://user-images.githubusercontent.com/74011232/120957470-ae64ed00-c790-11eb-9af2-746f2f13249d.png">
 
 ## URL
-===
 https://taskapp20210519.herokuapp.com/
 
 ## 目指した課題解決
@@ -21,7 +18,6 @@ https://taskapp20210519.herokuapp.com/
 
 
 ## 使用技術
-===
 - Ruby 2.6.5
 - Ruby on Rails6.0.0
 - MySQL2 0.4.4
@@ -32,7 +28,6 @@ https://taskapp20210519.herokuapp.com/
 
 
 # テーブル設計
-===
 
 ## usersテーブル
 
@@ -71,13 +66,13 @@ https://taskapp20210519.herokuapp.com/
 - belongs_to :list
 
 ## ER図
-===
-![Alt text](/TaskApp/to/ER.png)
+
+![ER](https://user-images.githubusercontent.com/74011232/120957521-c8063480-c790-11eb-9ec5-27f917510883.png)
 
 
 
 ## 機能一覧
-===
+
 - ユーザー登録、ログイン機能(devise)
 - ゲストユーザー機能(devise)
 - リスト作成・編集機能
